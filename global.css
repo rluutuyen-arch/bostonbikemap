@@ -9,6 +9,17 @@ body {
     padding: 1em;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 5;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
 #map {
   width: 90%; /* Adjust width to your desired size */
   height: 90%; /* Adjust height to your desired size */
