@@ -81,4 +81,5 @@ main {
   text-align: center;
   background-color: var(--color);
   border-radius: 4px;
+  color: white;
 }
