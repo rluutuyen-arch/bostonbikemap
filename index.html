@@ -13,12 +13,29 @@
     <script src="map.js" type="module"></script>
 </head>
 <body>
-    <h1>🚴🏼‍♀️Boston Bike Map</h1>
-    <p>
-        A map of Boston showing bike lanes, BlueBike stations, 
-        and resulting traffic at those stations. Additionally, you 
-        can also filter by time of day to see traffic at specific times.
-    </p>
-    <div id="map"></div>
+    <header>
+        <h1>🚴🏼‍♀️Boston Bike Map</h1>
+        <label id="time-filter">
+            <input type="range" min="-1" max="1440" value="-1" id="time-slider">
+            <time id="selected-time">
+                <em id="any-time">(any time)</em>
+            </time>
+        </label>
+    </header>
+    <main>
+        <p>
+            A map of Boston showing bike lanes, BlueBike stations, 
+            and resulting traffic at those stations. Additionally, you 
+            can also filter by time of day to see traffic at specific times.
+        </p>
+        <div id="map">
+            <svg></svg>
+        </div>
+        <div class="legend">
+            <div style="--departure-ratio: 1">More departures</div>
+            <div style="--departure-ratio: 0.5">Balanced</div>
+            <div style="--departure-ratio: 0">More arrivals</div>
+        </div>
+    </main>
 </body>
 </html>
